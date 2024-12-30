@@ -31,7 +31,7 @@ exec python3 -m wyoming_vosk \
     --data-dir /data \
     --download-dir /data \
     --data-dir /share/vosk/models \
-    --sentences-dir /share/vosk/sentences \
+    --sentences-dir /homeassistant/vosk/sentences \
     --correct-sentences "$(bashio::config 'correct_sentences')" \
     --language "$(bashio::config 'preload_language')" \
     --preload-language "$(bashio::config 'preload_language')" ${flags[@]}
